@@ -5,7 +5,7 @@ const app = {
     options: ['One', 'Two']
 }
 
-var template = (
+const template = (
     <div>
         <title>{app.title}</title>
         <h1>{app.title}</h1>
@@ -19,5 +19,5 @@ var template = (
     </div>
 );
 
-var appRoot = document.getElementById('root');
+const appRoot = document.getElementById('root');
 ReactDOM.render(template, appRoot);
