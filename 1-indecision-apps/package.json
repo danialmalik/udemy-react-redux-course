@@ -4,12 +4,18 @@
   "main": "index.js",
   "author": "danialmalik",
   "license": "MIT",
+
+  "serve": "public",
+  "app": "src/app.jsx",
+  "playground": "src/playground/es6-classes-1.jsx",
+
   "dependencies": {
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1"
   },
   "scripts": {
-    "run-babel": "babel src/app.jsx --out-file=public/scripts/app.js --presets=env,react",
-    "watch-babel": "babel src/app.jsx --out-file=public/scripts/app.js --presets=env,react --watch"
+    "run-babel": "babel $npm_package_app --out-file=public/scripts/app.js --presets=env,react",
+    "watch-babel": "babel $npm_package_app --out-file=public/scripts/app.js --presets=env,react --watch",
+    "serve": "live-server $npm_package_serve"
   }
 }
