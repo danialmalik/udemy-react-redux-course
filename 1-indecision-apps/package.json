@@ -6,11 +6,9 @@
   "license": "MIT",
   "serve": "public",
   "app": "src/app.jsx",
-  "playground": "src/playground/es6-classes-1.jsx",
   "dependencies": {
-    "babel-preset-env": "1.5.2",
-    "babel-preset-react": "6.24.1",
-    "react": "^16.13.1"
+    "react": "^16.13.1",
+    "yarn": "^1.22.10"
   },
   "scripts": {
     "run-babel": "babel $npm_package_app --out-file=public/scripts/app.js --presets=env,react",
@@ -18,6 +16,9 @@
     "serve": "live-server $npm_package_serve"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0"
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1",
+    "babel-cli": "^6.26.0",
+    "live-server": "^1.2.1"
   }
 }
